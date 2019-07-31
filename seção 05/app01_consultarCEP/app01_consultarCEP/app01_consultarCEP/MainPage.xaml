@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="app01_consultarCEP.MainPage">
+
+    <StackLayout BackgroundColor="#ffbf00" Padding="30" Spacing="30">
+        <!-- Place new controls here -->
+
+        <!-- A propriedade x: da um nome ao objeto-->
+        <!-- A propriedade Source é o caminho da imagem-->
+        <Image Source="logo.png" x:Name="Logo"/>
+
+        <!-- A propriedade Placeholder é o label do edit-->
+        <!-- PlaceholderColor é a cor do texto do label do campo -->
+        <!-- BackgroundColor cor de fundo do campo -->
+        <Entry Placeholder="Digite o cep" PlaceholderColor="#ffbf00" BackgroundColor="#FFFFFF" x:Name="CEP"/>
+
+        <!-- Text é o label do botão -->
+        <!-- textColor é a cor do label do botão -->
+        <!-- BackgroundColor é a cor do botão-->
+        <Button Text="Buscar CEP" TextColor="#FFFFFF" BackgroundColor="#00416b" x:Name="Botao"/>
+        
+        <Label Text="" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" x:Name="Resultado"/>
+    </StackLayout>
+
+</ContentPage>
